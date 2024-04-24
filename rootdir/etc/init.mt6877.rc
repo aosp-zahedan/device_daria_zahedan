@@ -53,6 +53,8 @@ on init
 # prize added by pengzhipeng, add charge_limit, 20220509-start
     chmod 0666 /sys/devices/platform/charger/cmd_charge_disable
 # prize added by pengzhipeng, add charge_limit, 20220509-end
+    chown root system /sys/devices/platform/charger/input_current
+    chmod 0660 /sys/devices/platform/charger/input_current
 
 # prize added by liguoning for x9-443, 20221214
     chmod 0666 /sys/devices/platform/charger/charging_scenario

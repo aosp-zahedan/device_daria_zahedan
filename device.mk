@@ -252,6 +252,10 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.zahedan \
     android.hardware.light@2.0.vendor
 
+# Lineage Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.zahedan
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
