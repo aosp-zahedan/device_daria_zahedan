@@ -16,12 +16,14 @@
 
 #define LOG_TAG "fastcharge@1.0-service.zahedan"
 
-#define FASTCHARGE_PATH "/sys/devices/platform/charger/input_current"
+#define FASTCHARGE_PATH "/sys/devices/platform/common_node/charger_input_limit"
 
 #include "FastCharge.h"
 #include <android-base/logging.h>
+#include <chrono>
 #include <fstream>
 #include <iostream>
+#include <thread>
 
 namespace vendor {
 namespace lineage {
@@ -77,8 +79,8 @@ Return<bool> FastCharge::isEnabled() {
 }
 
 Return<bool> FastCharge::setEnabled(bool enable) {
-    set(FASTCHARGE_PATH, enable ? 0 : 3000000);
-
+    set(FASTCHARGE_PATH, enable ? 0 : 1800000);
+    std::this_thread::sleep_for(std::chrono::milliseconds(500));
     return isEnabled();
 }
 
