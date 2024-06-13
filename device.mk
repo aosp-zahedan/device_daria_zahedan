@@ -108,7 +108,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@1.0.vendor \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor \
-    libcamera2ndk_vendor
+    libcamera2ndk_vendor \
+    libexif.vendor \
+    libpng.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -136,6 +138,7 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libdrm.vendor \
     libdrm \
+    libexpat.vendor \
     disable_configstore
 
 # Fastbootd
@@ -158,7 +161,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss@1.1.vendor \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor
+    android.hardware.gnss-V1-ndk.vendor \
+    libcurl.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
