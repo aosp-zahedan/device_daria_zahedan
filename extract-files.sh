@@ -61,6 +61,9 @@ function blob_fixup {
         vendor/lib64/hw/hwcomposer.mt6877.so)
             sed -i "s/OnScreenFingerprintDimLayer/SurfaceView[UdfpsController/" "${2}"
             ;;
+        system_ext/lib64/libsource.so)
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
         vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service | vendor/lib64/android.hardware.power-service-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.power-V2-ndk_platform.so" "android.hardware.power-V2-ndk.so" "${2}"
             ;;

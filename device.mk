@@ -351,6 +351,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor \
+    libui_shim \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
