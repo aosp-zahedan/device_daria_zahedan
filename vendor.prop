@@ -357,6 +357,7 @@ persist.vendor.connsys.dynamic.dump=0
 vendor.connsys.driver.ready=no
 
 # Camera (ODM)
+ro.odm.camera=1
 ro.odm.ai.scene=1
 ro.odm.ai.scene_title=1
 ro.odm.autohdr=1
