@@ -12,15 +12,3 @@
 
 # Wifi
 /(vendor|system/vendor)/bin/wifimacaddr                                                                                  u:object_r:wifimacaddr_exec:s0
-
-# Live Display
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.zahedan                                        u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
-
-# HBM
-/sys/devices/platform/14013000.dsi/hbm											 u:object_r:sysfs_leds:s0
-
-# Vibrator
-/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.zahedan                                              u:object_r:hal_vibrator_default_exec:s0
-
-# Fast charge HAL
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@1\.0-service\.zahedan                                         u:object_r:hal_lineage_fastcharge_default_exec:s0
