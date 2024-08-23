@@ -252,6 +252,14 @@ PRODUCT_PACKAGES += \
     android.hardware.lights-service.zahedan \
     android.hardware.light@2.0.vendor
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.1-service.zahedan
+
 # Media
 PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor \
@@ -299,6 +307,15 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-aosp
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
     FrameworksResOverlayZahedan \
@@ -432,11 +449,13 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.zahedan
 
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v32
+
+TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
