@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/daria/zahedan/device.mk)
 
-# # Inherit some common LMODroid stuff.
-# $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
+# Inherit some common LMODroid stuff.
+$(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
 PRODUCT_NAME := aosp_zahedan
 PRODUCT_DEVICE := zahedan
