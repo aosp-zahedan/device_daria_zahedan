@@ -322,7 +322,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lmodroid
 
 PRODUCT_PACKAGES += \
-    LMODroidEdgeCutout \
     FrameworksResOverlayZahedan \
     SettingsOverlayZahedan \
     SettingsProviderOverlayZahedan \
