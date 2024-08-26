@@ -14,7 +14,7 @@ $(call inherit-product, device/daria/zahedan/device.mk)
 # Inherit some common LMODroid stuff.
 $(call inherit-product, vendor/lmodroid/config/common_full_phone.mk)
 
-PRODUCT_NAME := lmodroid_zahedan
+PRODUCT_NAME := aosp_zahedan
 PRODUCT_DEVICE := zahedan
 PRODUCT_MANUFACTURER := Daria
 PRODUCT_BRAND := Daria
