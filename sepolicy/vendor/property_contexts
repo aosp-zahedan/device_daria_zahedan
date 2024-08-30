@@ -134,3 +134,6 @@ ro.odm.fingerprint    u:object_r:vendor_odm_factory_prop:s0
 ro.odm.auto_test    u:object_r:vendor_odm_factory_prop:s0
 ro.odm.auto_test_show_results    u:object_r:vendor_odm_factory_prop:s0
 ro.odm.doujia_dog_free    u:object_r:vendor_odm_factory_prop:s0
+
+# VT
+ro.vendor.vt.    u:object_r:vendor_mtk_vendor_vt_prop:s0
