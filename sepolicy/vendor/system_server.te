@@ -1,3 +1,5 @@
 get_prop(system_server, vendor_odm_camera_prop)
 
 allow system_server sysfs_pump_express:file r_file_perms;
+
+allow system_server sysfs_vibrator:file r_file_perms;
